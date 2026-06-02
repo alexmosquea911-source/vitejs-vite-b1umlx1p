@@ -338,7 +338,7 @@ function FeedScreen({ me, onUserClick }) {
             )}
             {/* Actions */}
             <div style={{ padding: "8px 14px 12px" }}>
-            <div onClick={() => onUserClick(post.author)} style={{ cursor: "pointer", flex: 1 }}>
+              <div style={{ display: "flex", gap: 16, alignItems: "center", marginBottom: 8 }}>
                 <button onClick={() => toggleLike(post.id)} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 5, padding: 0 }}>
                   {Icon.heart(liked)}
                   <span style={{ color: liked ? C.danger : C.muted, fontSize: 13 }}>{post.likes.length}</span>
